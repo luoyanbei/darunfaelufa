@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'DaRunFa' target in the 'DaRunFa' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import "/opt/theos/Prefix.pch"  //path/to/theos/Prefix.pch
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#endif
