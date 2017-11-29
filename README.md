@@ -5,7 +5,7 @@
 
 本项目的主要功能是采集“大润发e路发”APP中的商品数据
 
-代码仅供学习交流，感谢您 帮忙在右上角 点个“⭐️”，非常感谢
+代码仅供学习交流，谢绝其他非法用途，感谢您 帮忙在右上角 点个“⭐️”，非常感谢
 
 APP与服务器使用HTTPS协议加密数据，起初尝试HTTPS抓包，失败。
 
@@ -14,7 +14,9 @@ APP与服务器使用HTTPS协议加密数据，起初尝试HTTPS抓包，失败�
 
 ## 开发和使用环境
 
-开发环境：TheOS+iOSOpenDev+Xcode
+开发环境：TheOS + iOSOpenDev + Xcode
+
+分析工具：静态分析用Hopper，动态分析用lldb和debugserver
 
 使用环境：越狱的苹果手机或iPad
 
@@ -132,9 +134,18 @@ APP版本：1.0.8
 
 ## 结语
 
-代码仅供学习交流，感谢您 帮忙在右上角 点个“⭐️”，非常感谢
+- 代码仅供学习交流，谢绝其他非法用途，感谢您 帮忙在右上角 点个“⭐️”，非常感谢
 
-当前项目中使用的他人库：
+- iOS逆向开发基本流程：
+  1.使用 dumpdecrypted 对目标APP砸壳，[教程](http://bbs.iosre.com/t/dumpdecrypted-app/22)
+  2.使用 class-dump 导出APP的头文件，方便查找APP中定义的类和类的属性
+  3.使用 Hopper 做静态分析，从Hopper中的汇编代码可大体看出OC代码逻辑
+  4.使用 lldb 和 debugserver 做动态调试，分析具体数据和代码逻辑
+  5.使用 Logify.pl 来跟踪函数的调用，以及获取调用的参数, [教程](http://www.blogfshare.com/ioss-theos-logify.html)
+  6.交替使用3、4、5步，逐步完成分析，根据分析内容，编写tweak。
+
+
+- 当前项目中使用的他人库：
 
 1.BGFMDB是一个封装了FMDB的库，不需要写sql语句就可完成数据的增删改查，我个人感觉很好用
 
