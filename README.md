@@ -26,11 +26,11 @@ APP版本：1.0.8
 
 ## 采集的数据模型
 
-商品分类有两级目录：
+商品分类有两级分类：
 
-一级目录对应的类：FNTagTitleModel
+一级分类对应的类：FNTagTitleModel
 
-二级目录对应的类：FNDepartmentElementModel
+二级分类对应的类：FNDepartmentElementModel
 
 商品信息对应的类：FNProductMerchandiseListModel
 
