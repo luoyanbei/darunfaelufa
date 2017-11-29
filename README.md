@@ -138,7 +138,7 @@ APP版本：1.0.8
 
 - iOS逆向开发基本流程：
 
-  1.使用 dumpdecrypted 对目标APP砸壳，[教程](http://bbs.iosre.com/t/dumpdecrypted-app/22)
+  1.使用 dumpdecrypted 对目标APP砸壳 [教程](http://bbs.iosre.com/t/dumpdecrypted-app/22)
 
   2.使用 class-dump 导出APP的头文件，方便查找APP中定义的类和类的属性
 
@@ -146,15 +146,15 @@ APP版本：1.0.8
 
   4.使用 lldb 和 debugserver 做动态调试，分析具体数据和代码逻辑
 
-  5.使用 Logify.pl 来跟踪函数的调用，以及获取调用的参数, [教程](http://www.blogfshare.com/ioss-theos-logify.html)
+  5.使用 Logify.pl 来跟踪函数的调用，以及获取调用的参数 [教程](http://www.blogfshare.com/ioss-theos-logify.html)
 
   6.交替使用3、4、5步，逐步完成分析，根据分析内容，编写tweak。
 
 
 - 当前项目中使用的他人库：
 
-1.[BGFMDB](https://github.com/huangzhibiao/BGFMDB)是一个封装了FMDB的库，不需要写sql语句就可完成数据的增删改查，我个人感觉很好用
+  1.[BGFMDB](https://github.com/huangzhibiao/BGFMDB)是一个封装了FMDB的库，不需要写sql语句就可完成数据的增删改查，我个人感觉很好用
 
 
 
-2.[ProgressHUD](https://github.com/relatedcode/ProgressHUD)进度提示控件，简单好用
+  2.[ProgressHUD](https://github.com/relatedcode/ProgressHUD)进度提示控件，简单好用
