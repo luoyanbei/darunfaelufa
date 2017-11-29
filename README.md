@@ -36,7 +36,7 @@ APP版本：1.0.8
 
 ## 主要代码
 
-- 保存一级目录的主要代码：
+- 保存一级分类的主要代码：
 
 ```
 %hook FNTagTitleModel
@@ -70,7 +70,7 @@ APP版本：1.0.8
 
 
 
-- 保存二级目录的主要代码：
+- 保存二级分类的主要代码：
 ```
 %hook FNDepartmentViewModel
 
